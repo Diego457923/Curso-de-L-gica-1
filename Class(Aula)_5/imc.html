@@ -1,0 +1,39 @@
+<meta charset="UTF-8">
+
+<script>
+
+    //FUNCTIONS
+
+    function jumpLine() {
+        document.write("<br><br>");
+    }
+
+    function write(phrase) {
+
+        document.write(phrase);
+        jumpLine();
+    }
+
+    function calculateImc(weight, height) {
+        var imc = weight / (height*height)
+        return imc;
+    }
+
+    //CODE
+
+    var imcFriend = calculateImc(68, 1.72);
+
+    write("Flávio's Imc is " + calculateImc(73, 1.71).toFixed(4) + "and his friend's is : " + imcFriend.   toFixed(4));
+    
+
+    var name = prompt("Inform your name: ");
+
+    var informWeight = prompt("Inform your weight: ");
+
+    var informHeight = prompt("Inform your height: ");
+
+    var imc = calculateImc(informWeight, informHeight);
+
+    write(name + " the your imc calculate is: " + imc.toFixed(4));
+
+</script>

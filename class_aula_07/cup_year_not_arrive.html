@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function jumpLine() {
+        document.write("<br><br>");
+    }
+
+    function write(phrase) {
+
+        document.write(phrase);
+        jumpLine();
+    }
+
+    var yearCup = 1930;
+
+    var limit = parseInt(prompt("What is the limit year?"));
+
+    while(yearCup <= limit) {
+
+        write(yearCup + " had the World Cup!");
+        
+        yearCup += 4;
+    }
+
+    
+
+    write("Ufa! These were the years that had the World Cup until: " + limit);
+</script>

@@ -1,0 +1,30 @@
+    <meta charset="UTF-8">
+
+<script>
+
+    //FUNCTIONS
+
+    function jumpLine() {
+        document.write("<br>");
+    }
+
+    function write(phrase) {
+
+        document.write(phrase);
+        jumpLine();
+    }
+
+
+    //CODE  
+
+    for (var line  = 0; line <  3; line++) {
+        
+        for (var colum = 0; colum < 10; colum++) {
+            
+            document.write('*')
+        }
+
+        jumpLine();
+    }
+    
+</script>

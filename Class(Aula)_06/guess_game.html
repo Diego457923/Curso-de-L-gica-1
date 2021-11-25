@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+
+<script>
+
+    //FUNCTIONS
+
+    function jumpLine() {
+        document.write("<br><br>");
+    }
+
+    function write(phrase) {
+
+        document.write(phrase);
+        jumpLine();
+    }
+
+    function raffle(number) {
+        
+        return Math.round(Math.random() * number);
+    }
+
+
+    //CODE  
+
+    var numberThought = raffle(10);
+
+    var guess = parseInt(prompt("Digit your guess!"))
+
+    if(guess == numberThought) {
+
+        write("Wow! You got it right because I thought in the: " + numberThought)
+
+    } else if (guess < numberThought) {
+
+        write("You missed, the number thought was greater: " + numberThought);
+
+    } else {
+
+        write("You missed, the number thought was smaller: " + numberThought);
+
+    }
+
+</script>

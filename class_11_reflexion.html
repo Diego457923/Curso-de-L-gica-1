@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(phrase) {
+        document.write(phrase);
+        pulaLinha();
+    }
+
+    mostra("<h1>Welcome</h1>");
+    mostra("<p>This is a simple program</p>");
+
+
+    //CODE MORE LEGIBLE 
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function exibeTitulo(title) {
+        document.write("<h1>" + title + "</h1>");
+        pulaLinha();
+    }
+
+    function exibeParagrafo(paragraph) {
+        document.write("<p>" + paragraph + "</p>");
+        pulaLinha();
+    }
+
+    // Ask someone to read it from now on and see if they understand what is being done
+    exibeTitulo("Welcome");
+    exibeParagrafo("This is a simple program");
+
+</script>

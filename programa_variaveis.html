@@ -1,0 +1,86 @@
+<meta charset="UTF-8">
+
+<script>
+
+	var ano = 2016;
+
+	document.write("Flavio is " + (ano - 1977) + " years old<br>");
+	document.write("Joaquim is " + (ano - 1996) + " years old<br>");
+	
+	ano = 2017;
+
+	document.write("Barney is " + (ano - 1976) + " years old<br><br>");	
+
+	/*TAPANDO BURRACO: Missing to declare the variable n
+	*/
+	var n = 1;
+
+    document.write("The result of the formula is : " + n * (10 / 20) + "<br><br>");
+
+    /*ONDE ESTÁ O ERRO? It was in declaration of the variable,
+    which was called myage when the declaration
+    should be myAge*/
+
+    var myAge = 20;
+
+    document.write("I got born in " + (2016 - myAge) + "<br><br>");
+
+    //Correct way to reassign a  variable
+    var mes = 6;
+    
+    document.write("I took the test in the month " + mes + ".<br>");
+    mes = 7;
+    
+    document.write("No, sorry, I took the test in the month " + mes + ".<br><br>");
+
+    /*FACILITANDO NOSSA VIDA! Para facilitara só é subtituir 
+    o número da tabuada que se repete por uma variável, assim, 
+    não necessitando alterar o número da tabuada caso deseje outra.
+	*/
+   
+
+    var timesTable = 5;
+
+	document.write(timesTable + " times 1 is " + timesTable * 1+ "<br>");
+    document.write(timesTable + " times 2 is " + timesTable * 2+ "<br>");
+    document.write(timesTable + " times 3 is " + timesTable * 3+ "<br>");
+    document.write(timesTable + " times 4 is " + timesTable * 4+ "<br>");
+    document.write(timesTable + " times 5 is " + timesTable * 5+ "<br>");
+    document.write(timesTable + " times 6 is " + timesTable * 6+ "<br>");
+    document.write(timesTable + " times 7 is " + timesTable * 7+ "<br>");
+    document.write(timesTable + " times 8 is " + timesTable * 8+ "<br>");
+    document.write(timesTable + " times 9 is " + timesTable * 9+ "<br>");
+    document.write(timesTable + " times 10 is " + timesTable * 10+ "<br><br>");
+ 	
+
+    //CLASS: Summary(Aula: Resumo)
+
+    var ageFlavio = 39;
+    var ageJoaquim = 20;
+    var ageBarney = 41; 
+
+    var average = ((ageFlavio + ageJoaquim + ageBarney)/3);
+
+    document.write("The average of the ages is: " + Math.round(average));
+
+    var name = "Flávio";
+
+    document.write("<br>The age of " + name + "is: " + ageFlavio + "<br>");
+
+    //INDENTED CODE
+    var ageLinda = 12;
+    var ageGuaraciara = 15;
+    var agePerola = 13;
+
+    document.write("<br>The average of the ages of the my daughters are: " + Math.round((ageLinda + ageGuaraciara + agePerola) / 3) + "<br><br>");
+
+    //ROY IS NOW A PROGRAMMER: Sum in one variable
+
+    var ageLinda = 12;
+    var ageGuaraciara = 15;
+    var agePerola = 13;
+    var fullAge = ageLinda + ageGuaraciara + agePerola;
+
+    document.write(Math.round(fullAge / 3) + "<br>");
+
+</script>

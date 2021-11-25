@@ -1,0 +1,49 @@
+ <meta charset="UTF-8">
+
+<input/>
+
+<button>Compare with my secret</button>
+
+
+<script>
+
+    var secret = Math.round(Math.random() * 10);
+
+    //value digit
+
+    var input = document.querySelector("input");
+
+    //What the button do
+
+    input.focus();
+
+    function check() {
+        
+        if (input.value == secret) {
+
+            alert("You Hit");
+
+        } else {
+
+            alert("You Mistake");
+        }
+
+        //clear the input
+
+        input.value = ""; 
+
+        //Allow retryping on input
+
+        input.focus(); 
+    }
+
+    //Call the button
+
+    var button = document.querySelector("button");
+
+    //Call the "check" function the at click in the button
+
+    button.onclick = check;
+
+</script>
+

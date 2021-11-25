@@ -1,0 +1,39 @@
+<meta charset="UTF-8">
+
+<h1>Receitas do Yan</h1>
+
+<script>
+    var ingredients = [];
+
+    var amount = parseInt(prompt("How many ingredients are you going to add?"));
+
+    var counter = 1;
+
+    while( counter <= amount) {
+
+        var ingredient = prompt("Inform the ingredient " + counter);
+
+        var notFind = true;
+
+        for (var position = 0; position < ingredients.length; position++) {
+            
+            if (ingredient == ingredients[position]) {
+
+                notFind = false;
+                
+                break;
+            }
+        }
+
+        if(notFind) {
+
+            ingredients.push(ingredient);
+
+            counter++;
+        }
+        
+    }
+
+    console.log(ingredients);
+
+</script>

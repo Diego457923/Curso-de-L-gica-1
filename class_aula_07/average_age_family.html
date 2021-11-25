@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<script>
+
+    //FUNCTIONS
+
+    function jumpLine() {
+        document.write("<br><br>");
+    }
+
+    function write(phrase) {
+
+        document.write(phrase);
+        jumpLine();
+    }
+
+    //CODE
+
+    var totalMembers = parseInt(prompt("Number of family members"));
+
+    var totalAge = 0;
+
+    for (var number = 0; number < totalMembers; number++) {
+        
+        var age = parseInt(prompt("Inform the age of the family member"));
+
+        totalAge += age
+    }
+
+    write("The average of the ages of the family members is " + (totalAge/totalMembers))
+
+</script>

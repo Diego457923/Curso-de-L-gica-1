@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+
+<script>
+
+    //FUNCTIONS
+
+    function jumpLine() {
+        document.write("<br><br>");
+    }
+
+    function write(phrase) {
+
+        document.write(phrase);
+        jumpLine();
+    }
+
+    //CODE
+
+    var totalEvents = parseInt(prompt("Inform the total of events"));
+
+    var totalSpentWithEvents = 0;
+
+    for (var number = 0; number < totalEvents; number++) {
+        
+        var spent = parseInt(prompt("Inform the spent total with events"));
+
+        totalSpentWithEvents += spent
+    }
+
+    var average = totalSpentWithEvents/totalEvents
+
+    write("The average of spents is " + average);
+
+</script>

@@ -1,0 +1,111 @@
+ <meta charset="UTF-8">
+
+<input/>
+
+<button>Compare with my secret</button>
+
+
+<script>
+
+    //FUNCTIONS
+
+    //Draw a number
+
+    function raffle() {
+        
+        return Math.round(Math.random() * 10);
+    }
+
+    //Creates an array with numbers randoms
+
+    function numberDraw(amount) {
+        
+        var secretes = [];
+
+        number = 1
+
+         //Loop to add random numbers to the secrets array
+
+        while (number <= amount) {
+            
+            var numberRandom = raffle();
+
+            var notFind = true;
+
+            //Loop to see if the number is alredy in the array
+            
+            for (var position = 0; position < secretes.length; position++) {
+                
+                if (numberRandom == secretes[position] || numberRandom == 0) {
+
+                    notFind = false;
+
+                    break;
+                
+                }  
+            }
+            
+            //Adds a number to array
+
+            if (notFind) {
+
+                 secretes.push(numberRandom);
+
+                 number++;
+            }
+
+        }
+
+        return secretes;
+    }
+
+
+    //CODE
+
+    var secret = numberDraw(3);
+
+    //value digit
+
+    var input = document.querySelector("input");
+
+    //What the button do
+
+    input.focus();
+
+    function check() {
+        
+        for (var position = 0; position < secret.length; position++) {
+        
+            if (input.value == secret[position]) {
+
+                alert("You Hit");
+
+                break;
+
+            } else if(position == secret.length-1) {
+
+                alert("You Mistake");
+            }
+        }
+
+        
+
+        //clear the input
+
+        input.value = ""; 
+
+        //Allow retryping on input
+
+        input.focus(); 
+    }
+
+    //Call the button
+
+    var button = document.querySelector("button");
+
+    //Call the "check" function the at click in the button
+
+    button.onclick = check;
+
+</script>
+

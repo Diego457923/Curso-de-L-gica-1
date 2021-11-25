@@ -1,0 +1,48 @@
+<meta charset="UTF-8">
+
+<script>
+
+    //FUNCTIONS
+
+    function jumpLine() {
+        document.write("<br><br>");
+    }
+
+    function write(phrase) {
+
+        document.write(phrase);
+        jumpLine();
+    }
+
+    function calculateImc(weight, height) {
+        var imc = weight / (height*height)
+        return imc;
+    }
+
+    //CODE  
+
+    var name = prompt("Inform your name: ");
+
+    var informWeight = prompt("Inform your weight: ");
+
+    var informHeight = prompt("Inform your height: ");
+
+    var imc = calculateImc(informWeight, informHeight);
+
+    write(name + " the your imc is: " + imc.toFixed(4));
+
+    if (imc < 18.5) {
+
+        write("You are below recommended.")
+
+    }else if(imc > 35) {
+
+        write("you are above recommended.")
+
+    } else {
+
+        write("Your imc is excellent")
+
+    }
+
+</script>

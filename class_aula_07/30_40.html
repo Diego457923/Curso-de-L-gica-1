@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+
+<script>
+
+    //FUNCTIONS
+
+    function jumpLine() {
+
+        document.write("<br><br>");
+      
+    }
+
+    function write(phrase) {
+
+        document.write(phrase);
+        jumpLine();
+    }
+
+
+    //CODE
+
+    var number = 30;
+
+    while(number <= 40){
+
+        if(number != 33 && number != 37){
+
+            write(number);
+        }
+
+        number ++;
+    }
+
+    write("END!");
+
+</script>

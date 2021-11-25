@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<script>
+
+    //FUNCTIONS
+
+    function jumpLine() {
+
+        document.write("<br><br>");
+      
+    }
+
+    function write(phrase) {
+
+        document.write(phrase);
+        jumpLine();
+    }
+
+
+    //CODE
+
+    var number = 2;
+
+    while(number <= 100){
+
+        write(number);
+        number += 2;
+    }
+
+    write("END!");
+
+</script>

@@ -1,0 +1,45 @@
+<meta charset="UTF-8">
+<script>
+
+    var loginRegistered = "Diego";
+    var passwordRegistered = "Dgs112004";
+
+    var attemps = 0;
+
+    //LOOP OF ATTEMP
+
+    while(true) {
+
+        //LOGIN AND PASSWORD
+
+        var loginInformed = prompt("Inform your login");
+        var passwordInformed = prompt("Inform your password");
+
+        //VERIFICATION OF THE LOGIN AND PASSWORD RECEIVED
+
+        if( loginRegistered == loginInformed && passwordRegistered == passwordInformed ) {
+
+            alert("WELCOME to the system  " + loginInformed);
+            break
+        
+        //MAXIMUN ATTEMPS
+
+        } else if (attemps == 3) {
+
+            alert("Unidenfied user!")
+            break
+
+        //USER AND PASSWORD UNIDENFIED
+
+        }else {
+
+            alert("Invalid login. Try again")
+            attemps ++;
+        } 
+    }
+
+    //PAGE CONTENT
+
+    document.write("END!")
+
+</script>

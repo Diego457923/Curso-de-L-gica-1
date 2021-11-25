@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function write(phrase) {
+        document.write(phrase);
+        pulaLinha();
+    }
+
+    var age = parseInt(prompt("What is your age?"));
+    var haveWallet = prompt("Do you have a wallet? Answer Y or N");
+
+    if(age >= 18 && (haveWallet == "Y" || haveWallet == "S")) {
+
+        write("Can drive");
+
+    } else {
+
+        write("Can not drive");
+    }
+
+</script>

@@ -1,0 +1,44 @@
+<meta charset="UTF-8">
+
+<script>
+
+    //FUNCTIONS
+
+    function jumpLine() {
+
+        document.write("<br><br>");
+      
+    }
+
+    function write(phrase) {
+
+        document.write(phrase);
+        jumpLine();
+    }
+
+
+    //CODE
+
+    var victores = parseInt(prompt("Enter with the number of wins."));
+
+    var draws = parseInt(prompt("Enter with the number of draws."))
+
+    var points = victores * 3 + draws;
+
+    write("Your football team's points is: " + points);
+
+    if(points > 28) {
+
+        write("Your football team is better than last year")
+
+    }else if (points < 28) {
+
+        write("Your football team is worse off than last year")
+
+    }else {
+
+        write("Your football team is equal to last year")
+
+    }
+
+</script>
